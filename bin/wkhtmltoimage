@@ -2,12 +2,7 @@
 
 arch = case RUBY_PLATFORM
   when /64.*linux/
-    case `lsb_release -c`
-    when /jessie/  # Debian 8 - Jessie
-      'jessie-amd64'
-    else
-      'centos67-amd64'#'amd64'
-    end
+    'centos67-amd64'#'amd64'
   when /linux/
     'i386'
   when /darwin/
