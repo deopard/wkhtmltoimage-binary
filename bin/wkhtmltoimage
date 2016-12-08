@@ -6,7 +6,7 @@ arch = case RUBY_PLATFORM
     when /jessie/  # Debian 8 - Jessie
       'jessie-amd64'
     else
-      'amd64'
+      'centos67-amd64'#'amd64'
     end
   when /linux/
     'i386'
